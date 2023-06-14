@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        double elma = 3.67, armut = 2.14, domates = 1.11, muz = 0.95, patlican = 5,total;
+        double elma = 3.67, armut = 2.14, domates = 1.11, muz = 0.95, patlican = 5, total;
         int fElma, fArmut, fDomates, fMuz, fPatlican;
         Scanner inp = new Scanner(System.in);
         System.out.print("Kaç Kilo Elma Alındı? ");
