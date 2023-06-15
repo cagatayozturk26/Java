@@ -27,9 +27,9 @@ public class Main {
         int toplam = (mat + kimya + fizik + muzik + tarih + turkce);
         double ortalama = toplam / 6;
 
-        if (!((mat < 100) && (fizik < 100) && (kimya < 100) && (turkce < 100) && (tarih < 100) && (muzik < 100))) {
+        if ((mat > 100) || (fizik > 100) || (kimya > 100) || (turkce > 100) || (tarih > 100) || (muzik > 100)) {
             System.out.println("Hatalı not girişi yapıldı. Lütfen tekrar deneyiniz.");
-        } else if (!((mat > 0) && (fizik > 0) && (kimya > 0) && (turkce > 0) && (tarih > 0) && (muzik > 0))) {
+        } else if ((mat < 0) || (fizik < 0) || (kimya < 0) || (turkce < 0) || (tarih < 0) || (muzik < 0)) {
             System.out.println("Hatalı not girişi yapıldı. Lütfen tekrar deneyiniz.");
         } else {
             if (ortalama <= 55) {
