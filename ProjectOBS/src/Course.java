@@ -13,6 +13,7 @@ public class Course {
         this.prefix = prefix;
         this.verbal = 0;
         this.exam = 0;
+
     }
 
     public void addTeacher(Teacher t) {
@@ -20,8 +21,5 @@ public class Course {
             this.courseTeacher = t;
         } else
             System.out.println("Akademisyen girişi hatalı !");
-    }
-    public void ortalama(){
-        this.note = this.exam * 0.8 + this.verbal * 0.2;
     }
 }

@@ -62,6 +62,5 @@ public class Student {
         this.kimya.note = this.kimya.exam * 0.8 + this.kimya.verbal * 0.2;
         this.turkce.note = this.turkce.exam * 0.8 + this.turkce.verbal * 0.2;
     }
-
 }
 
