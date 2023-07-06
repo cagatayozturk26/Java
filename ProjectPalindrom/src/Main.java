@@ -1,24 +1,28 @@
-import java.util.Scanner;
-
 public class Main {
-    static boolean isPalindrom(int number) {
-        int reverseNumber = 0, temp = number, lastNumber;
-        while (temp != 0) {
-            lastNumber = temp % 10;
-            reverseNumber = reverseNumber * 10 + lastNumber;
-            temp /= 10;
+    static boolean isPalindrome(String str) {
+        int i = 0, j = str.length() - 1;
+        while (i < j) {
+            if (str.charAt(i) != str.charAt(j))
+                return false;
+            i++;
+            j--;
         }
-        if (reverseNumber == number)
+        return true;
+    }
+
+    static boolean isPalindrome2(String str) {
+        String reverse = "";
+        for (int i = str.length() - 1; i >= 0; i--) {
+            reverse += str.charAt(i);
+        }
+
+        if (str.equals(reverse))
             return true;
         else
             return false;
     }
 
     public static void main(String[] args) {
-        int palindrom;
-        Scanner input=new Scanner(System.in);
-        System.out.println("Palindrom olabileceğini düşündüğünüz bir sayı giriniz: ");
-        palindrom = input.nextInt();
-        System.out.println(isPalindrom(palindrom));
+        System.out.println(isPalindrome("çağatay"));
     }
 }
